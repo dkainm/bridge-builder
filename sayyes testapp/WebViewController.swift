@@ -12,7 +12,7 @@ class WebViewController: UIViewController {
 
     @IBOutlet weak var webView: WKWebView!
     
-    let url = URL(string: "https://google.com")
+    var url = URL(string: "https://google.com")
     
     override func viewDidLoad() {
         super.viewDidLoad()

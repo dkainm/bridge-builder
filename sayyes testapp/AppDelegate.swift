@@ -29,7 +29,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow()
         
         if params?.active ?? false {
-            let mainViewController = storyboard.instantiateViewController(withIdentifier: "WebViewController")
+            let mainViewController = storyboard.instantiateViewController(withIdentifier: "WebViewController") as! WebViewController
+            mainViewController.url = URL(string: params!.link)
             initialViewController = mainViewController
         } else {
             let loginViewController = storyboard.instantiateViewController(withIdentifier: "ViewController")
