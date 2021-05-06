@@ -8,5 +8,6 @@ target 'sayyes testapp' do
   # Pods for sayyes testapp
 
 	pod 'SnapKit'
+	pod 'Alamofire'
 
 end
